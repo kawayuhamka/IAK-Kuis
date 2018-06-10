@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tech.indi.latihanlayout.tech.indi.latihaniak3.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/gambar_banner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/banner"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/layout_banner_konten"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/gambar_profil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profile"
+            />
+        <TextView
+            android:id="@+id/text_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INDONESIA ANDROID KEJAR"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@android:color/black"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_above="@id/tombol_submit"
+        android:layout_below="@id/gambar_banner"
+        android:id="@+id/scroll_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_kontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/konten_iak"
+            android:textSize="20dp"
+            android:gravity="left"
+            android:padding="10dp"
+            />
+
+    </ScrollView>
+
+
+
+    <Button
+        android:id="@+id/tombol_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEND"
+        android:textColor="#ffffff"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+</RelativeLayout>
